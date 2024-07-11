@@ -1,0 +1,359 @@
+body{
+    /* background-color: wheat; */
+    background-color: rgb(224, 32, 7);
+    background-image: url(/assets/images/wallpapers/19ec6e09b56eef3d8fbedb0c1d7a81e6.jpeg);
+
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------- */
+/* Code css for header (logo and nav) */
+/* -------------------------------- */
+header,
+header>ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+header#header_top{
+    background-color: bisque;
+    border-bottom: 1px black solid;
+    height: fit-content;
+    
+}
+header>a>img{
+    width: 60px;
+    height:60px;
+    max-width: min-content;
+    max-height:60px;
+    border-radius: 100%;
+    margin: 10px;
+}
+#menu_small_screens,
+header>ul{
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.2rem;
+    transition: all 1s ease-out;
+    padding-left: 0;
+}
+#menu_big_screens>a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+#menu_big_screens>a>li{
+    margin: 10px;
+    padding:  0px 10px;
+    border-radius: 5px;
+}
+#menu_big_screens>a>li:hover{
+    /* color: rgb(238, 236, 236); */
+    border-bottom: 1px black solid;
+    transform: scale(1.2);
+}
+header>button {
+    display: none;
+    align-items: center;
+    padding: 2px;
+    width: fit-content;
+    height: fit-content;
+    font-size: small;
+    color: gray;
+    background: none;
+    border: none;
+}
+#menu_small_screens{
+    display: none;
+
+}
+header>button>svg {
+    width: 40px;
+    height: 40px;
+}
+
+@media(max-width: 800px) {
+    header>ul{
+        display: none;
+    } 
+    header>button {
+        display: inline-flex;
+    }
+    #menu_small_screens{
+        position: absolute;
+        top: 65px;
+        width:  90%;
+        max-width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        border-bottom: 2px black solid;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: rgba(36, 22, 13, 0.644);
+    }
+    #menu_small_screens>a{
+        text-decoration: none;
+        margin: 0;
+    }
+    #menu_small_screens>a>li{
+      margin: auto;
+      color: wheat;
+      font-weight: 500;
+      text-align: left;
+      width: max-content;
+      height: max-content;
+      padding: 10px;
+      border-radius: 5px;
+ 
+    }
+    #menu_small_screens>a>li:hover{
+        background-color: rgba(37, 26, 19, 0.644);
+        border-right: 1px black solid;
+        border-left: 1px black solid;
+    }
+}
+
+/* -------------------------------- */
+/* Code css for welcome's section */
+/* -------------------------------- */
+#welcome {
+    background: url('gaming-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#welcome .content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#welcome h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#welcome p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#welcome button {
+    background-color: #ff4c4c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#welcome button:hover {
+    background-color: #ff0000;
+}
+
+
+
+/* -------------------------------- */
+/* Code css for welcome's services */
+/* -------------------------------- */
+#screens {
+   width: 100%;
+}
+#screens>ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#screens>ul>li {
+    /* width: calc(35% - 10px);  */
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(54, 117, 93, 0.548);
+
+}
+.screen{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row-reverse nowrap;
+    /* background-color: #0400e9; */
+    width: 100%;
+    margin: 0px 50px;
+}
+#screens>ul>li>div>header {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: none;
+    border: none;
+    width: min-content;
+    width: 100%;
+}
+#screens>ul>li>div>header>h1 {
+    text-align: center; 
+    padding: 0 20px;
+}
+#screens li  img {
+    width: 400px;
+    height: 400px;
+    min-width: 400px;
+    min-height: 400px;
+}
+#screens li section.features {
+    /* width: calc(65% - 10px);  */
+    width: fit-content;
+    padding-left: 10px;
+    margin: 0px 40px;
+    box-sizing: border-box;
+    
+}
+#screens li section.features h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}  
+
+#screens li section.features p {
+    /* background-color: #333; */
+    max-width: 80%;
+    line-height: 25px;
+}
+
+.features>ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px 0px;
+    padding: 0px;
+}
+.features>ul>li {
+    display: flex;
+    flex-flow: column ;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 5px;
+}
+.features>ul>li>span:first-child {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c0101c0;
+}
+.features>ul>li>span:last-child {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #e2e2e2c0;
+    width: fit-content;
+}
+@media(max-width: 800px) {
+    .screen{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+    #screens>ul>li:nth-child(2)>.screen,
+    #screens>ul>li:last-child>.screen{
+        flex-flow: column-reverse;
+    }
+    #screens li section.features {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+
+/* -------------------------------- */
+/* Code css for welcome's testimonials */
+/* -------------------------------- */
+.testimonials {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.testimonials>h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: red;
+}
+.testimonial {
+    margin: 20px 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 30%;
+}
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.testimonial p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
+    margin: auto;
+
+}
+.testimonial p:last-child {
+    margin-top: 10px;
+    font-style: italic;
+    color: #777;
+}
+
+/* -------------------------------- */
+/* Code css for welcome's footer */
+/* -------------------------------- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+
+#footer_fix{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    z-index: 50;
+    width: 100%;
+    padding: 0 10px;
+    background-color: rgba(49, 1, 1, 0.966);
+}
+#social_networks{
+    margin-right: 20px;
+}
+#back_to_header{
+    cursor: pointer;
+    position: fixed;
+    bottom: 65px;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: 3rem;
+    background-color: #ad10109c;
+}
