@@ -52,7 +52,6 @@ header>ul{
     border-radius: 5px;
 }
 #menu_big_screens>li>a:hover{
-    /* color: rgb(238, 236, 236); */
     border-bottom: 1px black solid;
     transform: scale(1.2);
 }
@@ -67,28 +66,27 @@ header>button {
     background: none;
     border: none;
 }
-#menu_small_screens{
-    display: none;
-
-}
 header>button>svg {
     width: 40px;
     height: 40px;
 }
+#menu_small_screens {
+    display: none; /* Asegura que el menú esté oculto inicialmente */
+}
 
 @media(max-width: 800px) {
-    header>ul{
+    header>ul {
         display: none;
     } 
     header>button {
         display: inline-flex;
     }
-    #menu_small_screens{
+    #menu_small_screens {
         position: absolute;
         top: 53px;
-        width:  90%;
+        width: 90%;
         max-width: 90%;
-        display: flex;
+        display: none; /* Asegura que el menú esté oculto inicialmente */
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
@@ -99,18 +97,18 @@ header>button>svg {
         background-color: rgba(36, 22, 13, 0.644);
     }
     #menu_small_screens>li,
-    #menu_small_screens>li>a{
-      color: wheat;
-      font-weight: 500;
-      text-align: left;
-      width: max-content;
-      height: max-content;
-      padding: 10px;
-      border-radius: 5px;
-      text-decoration: none;
-      margin: 0;
+    #menu_small_screens>li>a {
+        color: wheat;
+        font-weight: 500;
+        text-align: left;
+        width: max-content;
+        height: max-content;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 0;
     }
-    #menu_small_screens>li>a:hover{
+    #menu_small_screens>li>a:hover {
         background-color: rgba(37, 26, 19, 0.644);
         border-right: 1px black solid;
         border-left: 1px black solid;
@@ -143,7 +141,7 @@ header>button>svg {
 #welcome .content img{
     width: 160px;
     height: 160px;
-    margin-top: 18%;
+    margin-top: 15%;
     margin-bottom: 0;
 }
 #welcome h1 {
