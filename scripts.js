@@ -19,15 +19,16 @@ document.addEventListener("DOMContentLoaded", function() {
             menu.style.display = 'none';
         }
     });
+
+    
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    var bgElement = document.getElementById("background_welcome");
-    var bgImage = new Image();
-    bgImage.src = "/assets/images/wallpapers/1366_2000.webp";
-    bgImage.onload = function() {
-        bgElement.style.backgroundImage = "url('" + bgImage.src + "')";
-        bgElement.style.backgroundSize = "cover";
-        bgElement.style.backgroundPosition = "center center";
-    };
-});
+// Intento de carga diferida de la imagen
+    // var bgElement = document.getElementById("background_welcome");
+    // var bgImage = new Image();
+    // bgImage.src = "/assets/images/wallpapers/Asus-ROG-Swift-PG27UQ.webp";
+    // bgImage.onload = function() {
+    //     bgElement.style.backgroundImage = "url('" + bgImage.src + "')";
+    //     bgElement.style.backgroundSize = "cover";
+    //     bgElement.style.backgroundPosition = "center center";
+    // };
