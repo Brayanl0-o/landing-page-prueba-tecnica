@@ -158,7 +158,8 @@ header>button>svg {
     white-space:wrap;
     color: transparent;
     background-clip: text;
-    background-image: linear-gradient(to right, #e9000cd5, #880909);
+    background-image: linear-gradient(to right,#010b96c5 40% , #c92a2ae0,#8f2308e8);
+
 }
 #welcome p {
     color: rgb(231, 231, 231);
@@ -197,14 +198,14 @@ header>button>svg {
     margin-top: 0;
 }
 .title{
-    background-image: linear-gradient(to right, #960101c5, #a72d0ee8);
     margin: 0px;
     width: fit-content;
     height: fit-content;
 }
 .title>h1{
     padding: 10px;
-    background-image: linear-gradient(to right, #960101c5, #a72d0ee8);
+    background-image: linear-gradient(to right, #010b96c5 40%, #8f2308e8 90%, #8f2308e8 100%);
+
     margin: 0px;
     height: fit-content;
 }
