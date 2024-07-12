@@ -158,6 +158,8 @@ header>button>svg {
     color: transparent;
     background-clip: text;
     background-image: linear-gradient(to right,#010b96c5 40% , #c92a2ae0,#8f2308e8);
+    background-image: linear-gradient(to right,#ca1414e0,#270a03e8);
+
 }
 #welcome p {
     color: rgb(231, 231, 231);

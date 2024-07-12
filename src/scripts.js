@@ -20,3 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var bgElement = document.getElementById("background_welcome");
+    var bgImage = new Image();
+    bgImage.src = "/assets/images/wallpapers/1366_2000.webp";
+    bgImage.onload = function() {
+        bgElement.style.backgroundImage = "url('" + bgImage.src + "')";
+        bgElement.style.backgroundSize = "cover";
+        bgElement.style.backgroundPosition = "center center";
+    };
+});
