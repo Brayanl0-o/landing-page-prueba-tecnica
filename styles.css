@@ -208,7 +208,7 @@ header>button>svg {
     flex-flow: row-reverse nowrap;
     /* background-color: #0400e9; */
     width: 100%;
-    margin: 0px 20px;
+    margin: 0px 0px;
 }
 .screen header img{
     max-width: 100%; 
@@ -228,12 +228,6 @@ header>button>svg {
     text-align: center; 
     padding: 0 20px;
 }
-/* #screens li  img {
-    width: 400px;
-    height: 400px;
-    min-width: 400px;
-    min-height: 400px;
-} */
 #screens li section.features {
     /* width: calc(65% - 10px);  */
     width: fit-content;
@@ -331,13 +325,15 @@ header>button>svg {
     justify-content: center;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 .testimonial {
     margin: 20px 20px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
-    width:fit-content;
+    min-width: 300px;
+    max-width: 300px;
+    width:300px;
     background-color: rgba(211, 211, 211, 0.863);
     box-shadow: 0 0 10px rgba(0, 0, 0,  0.1);
 }
@@ -352,6 +348,7 @@ header>button>svg {
     font-size: 1.2em;
     line-height: 1.5;
     color: #000000;
+    max-width: 80%;
 }
 .testimonial p:last-child {
     font-style: italic;
@@ -369,6 +366,23 @@ footer {
     background-color: #222222e0;
     color: white;
 }
+#social_networks{
+    height: auto; 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 20px 20px 0; 
+    max-width: 100%; 
+}
+#social_networks_whatssap_gmail{
+    height: auto; 
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    margin: 0px 20px 0; 
+    max-width: 100%; 
+}
 #footer_fix{
     position: fixed;
     bottom: 0;
@@ -382,15 +396,7 @@ footer {
     color: white;
     background-color: rgba(155, 9, 9, 0.842);
 }
-#social_networks{
-    height: auto; 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    gap: 5px;
-    margin: 0 20px 0 0; 
-    max-width: 100%; 
-}
+
 #back_to_header{
     width: fit-content;
     height: fit-content;
