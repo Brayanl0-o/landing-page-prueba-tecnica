@@ -1,7 +1,8 @@
 # Mejores Pantallas Gamers 2023 - Landing Page
 This is the HTML and CSS code for a page that displays the plans and prices of Deezer, a music streaming service.
 
-![landing page image](https://github.com/user-attachments/assets/cf501ce9-7bae-43a8-b443-ff639cfa5c56)
+![landing page image](https://github.com/user-attachments/assets/7d4c7f90-fe67-4d1a-9a8f-949e1386bb1e)
+
 
 ## Description
 
