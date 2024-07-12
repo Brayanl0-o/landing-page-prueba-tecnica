@@ -40,18 +40,18 @@ header>ul{
     transition: all 1s ease-out;
     padding-left: 0;
 }
-#menu_big_screens>a{
+#menu_big_screens>li>a{
     text-decoration: none;
-    color: black;
+    color: rgb(206, 206, 206);
     margin: 0;
 }
-#menu_big_screens>a>li{
+#menu_big_screens>li>a{
     margin: 0px 15px;
     font-weight: 6500;
     padding:  0px 10px;
     border-radius: 5px;
 }
-#menu_big_screens>a>li:hover{
+#menu_big_screens>li>a:hover{
     /* color: rgb(238, 236, 236); */
     border-bottom: 1px black solid;
     transform: scale(1.2);
@@ -85,7 +85,7 @@ header>button>svg {
     }
     #menu_small_screens{
         position: absolute;
-        top: 55px;
+        top: 53px;
         width:  90%;
         max-width: 90%;
         display: flex;
@@ -98,12 +98,8 @@ header>button>svg {
         border-bottom-left-radius: 5px;
         background-color: rgba(36, 22, 13, 0.644);
     }
-    #menu_small_screens>a{
-        text-decoration: none;
-        margin: 0;
-    }
-    #menu_small_screens>a>li{
-      margin: auto;
+    #menu_small_screens>li,
+    #menu_small_screens>li>a{
       color: wheat;
       font-weight: 500;
       text-align: left;
@@ -111,8 +107,10 @@ header>button>svg {
       height: max-content;
       padding: 10px;
       border-radius: 5px;
+      text-decoration: none;
+      margin: 0;
     }
-    #menu_small_screens>a>li:hover{
+    #menu_small_screens>li>a:hover{
         background-color: rgba(37, 26, 19, 0.644);
         border-right: 1px black solid;
         border-left: 1px black solid;
@@ -123,7 +121,7 @@ header>button>svg {
 /* Code css for welcome's section */
 /* -------------------------------- */
 #background_welcome{
-    background: url('/assets/images/wallpapers/1366_2000.jpg') no-repeat center center/cover;
+    background: url('/assets/images/wallpapers/1366_2000.webp') no-repeat center center/cover;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -168,7 +166,7 @@ header>button>svg {
     margin-bottom: 20px;
 }
 #welcome button {
-    background-color: #f11818;
+    background-color: #850303;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -176,7 +174,7 @@ header>button>svg {
     cursor: pointer;
 }
 #welcome button:hover {
-    background-color: #ff0000;
+    background-color: #960202;
 }
 
 
@@ -252,6 +250,8 @@ header>button>svg {
 
 #screens li section.features p {
     /* background-color: #333; */
+    font-size: 1.2em;
+
     max-width: 100%;
     line-height: 25px;
 }
@@ -317,6 +317,7 @@ header>button>svg {
     margin-bottom: 5%;
 }
 .testimonials>h2 {
+    color:rgba(228, 221, 221, 0.801);
     font-size: 2.5em;
     margin-bottom: 20px;
     width:100%;
@@ -342,7 +343,7 @@ header>button>svg {
     box-shadow: 0 0 10px rgba(0, 0, 0,  0.1);
 }
 .testimonial img {
-    width: 12   0px;
+    width: 120px;
     height: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -351,12 +352,12 @@ header>button>svg {
     margin: auto;
     font-size: 1.2em;
     line-height: 1.5;
-    color: #555;
+    color: #000000;
 }
 .testimonial p:last-child {
     font-style: italic;
     margin-top: 10px;
-    color: #777;
+    color: #242424;
 }
 
 /* -------------------------------- */
