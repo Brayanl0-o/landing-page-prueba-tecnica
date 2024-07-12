@@ -72,7 +72,7 @@ header>button>svg {
     height: 40px;
 }
 #menu_small_screens {
-    display: none; /* Asegura que el menú esté oculto inicialmente */
+    display: none; 
 }
 
 @media(max-width: 800px) {
@@ -133,7 +133,6 @@ header>button>svg {
 #welcome {
     text-align: center;
 }
-
 #welcome .content {
     width: fit-content;
     max-width: 900px;
@@ -159,7 +158,6 @@ header>button>svg {
     color: transparent;
     background-clip: text;
     background-image: linear-gradient(to right,#010b96c5 40% , #c92a2ae0,#8f2308e8);
-
 }
 #welcome p {
     color: rgb(231, 231, 231);
@@ -187,7 +185,6 @@ header>button>svg {
    display: flex;
    flex-flow: column;
    justify-content: center  ;
-   /* margin-top: 1%; */
 }
 #screens>ul {
     list-style: none;
@@ -205,13 +202,11 @@ header>button>svg {
 .title>h1{
     padding: 10px;
     background-image: linear-gradient(to right, #010b96c5 40%, #8f2308e8 90%, #8f2308e8 100%);
-
     margin: 0px;
     height: fit-content;
 }
 #screens>ul>li:first-child, 
 #screens>ul>li:nth-child(3){
-    /* width: calc(35% - 10px);  */
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
@@ -229,7 +224,6 @@ header>button>svg {
     justify-content: space-around;
     align-items: center;
     flex-flow: row-reverse nowrap;
-    /* background-color: #0400e9; */
     width: 100%;
     margin: 0px 0px;
 }
@@ -252,7 +246,6 @@ header>button>svg {
     padding: 0 20px;
 }
 #screens li section.features {
-    /* width: calc(65% - 10px);  */
     width: fit-content;
     padding-left: 10px;
     margin: 0px 40px;
@@ -262,34 +255,42 @@ header>button>svg {
     font-size: 2em;
     margin-bottom: 10px;
 }  
-
 #screens li section.features p {
-    /* background-color: #333; */
     font-size: 1.2em;
     color: wheat;
     max-width: 100%;
     line-height: 25px;
 }
-
-.features>ul {
+.features {
+    padding: 20px;
+}
+.features h2 {
+    text-align: center;
+}
+.features p {
+    text-align: center;
+    margin: 20px 0;
+}
+.features > ul {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 50px 0px;
+    margin: 10px 0px;
     padding: 0px;
 }
 .features>ul>li {
     display: flex;
-    flex-flow: column ;
+    flex-flow: column;
     justify-content: center;
-    margin: auto;
-    padding: 5px 15px;
-    border-right:  2px black solid;
-
+    margin: 5px;
+    padding: 5px 10px;
+    border-right: 2px black solid;
+    min-width: 150px; 
+    text-align: center;
 }
 .features>ul>li:last-child {
-    border-right:  none;
+    border-right: none;
 }
 .features>ul>li>span:first-child {
     font-size: 1.1rem;
@@ -324,7 +325,18 @@ header>button>svg {
         margin: auto;
     }
 }
-
+@media (max-width: 768px) {
+    .features>ul {
+        flex-flow: column nowrap;
+    }
+    .features>ul>li {
+        border-right: none;
+        border-bottom: 2px black solid;
+    }
+    .features>ul>li:last-child {
+        border-bottom: none;
+    }
+}
 
 /* -------------------------------- */
 /* Code css for welcome's testimonials */
@@ -422,7 +434,6 @@ footer {
     color: white;
     background-color: rgba(155, 9, 9, 0.842);
 }
-
 #back_to_header{
     width: fit-content;
     height: min-content ;
@@ -432,11 +443,9 @@ footer {
     right: 0;
     max-width: auto;
     background-color: #ad1010e5;
-
 }
 #back_to_header>span{
     padding: 0;
     margin: 0;
     font-size:2.5rem;
-
 }
