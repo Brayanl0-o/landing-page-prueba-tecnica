@@ -17,7 +17,8 @@ header>ul{
     text-align: center;
 }
 header#header_top{
-    background-color: #ad10109c;
+    background-color: #ad101060;
+    background-image: linear-gradient(to right, #310303d8, #960101c5);
     border-bottom: 1px black solid;
     height: fit-content;
     position: fixed;
@@ -86,7 +87,7 @@ header>button>svg {
         top: 53px;
         width: 90%;
         max-width: 90%;
-        display: none; /* Asegura que el menú esté oculto inicialmente */
+        display: none; 
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
@@ -337,7 +338,7 @@ header>button>svg {
     padding: 10px;
     border-radius: 8px;
     width:fit-content;
-    background-color: white;
+    background-color: rgba(211, 211, 211, 0.863);
     box-shadow: 0 0 10px rgba(0, 0, 0,  0.1);
 }
 .testimonial img {
