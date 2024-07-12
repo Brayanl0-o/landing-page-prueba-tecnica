@@ -120,7 +120,8 @@ header>button>svg {
 /* Code css for welcome's section */
 /* -------------------------------- */
 #background_welcome{
-    background: url('/assets/images/wallpapers/1366_2000.webp') no-repeat center center/cover;
+    background: #333;
+    background: url('/assets/images/wallpapers/Asus-ROG-Swift-PG27UQ.jpg') no-repeat center center/cover;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -157,7 +158,7 @@ header>button>svg {
     white-space:wrap;
     color: transparent;
     background-clip: text;
-    background-image: linear-gradient(to right, #380606, #e9000cd5);
+    background-image: linear-gradient(to right, #e9000cd5, #880909);
 }
 #welcome p {
     color: rgb(231, 231, 231);
@@ -182,7 +183,10 @@ header>button>svg {
 /* -------------------------------- */
 #screens {
    width: 100%;
-   margin-top: 1%;
+   display: flex;
+   flex-flow: column;
+   justify-content: center  ;
+   /* margin-top: 1%; */
 }
 #screens>ul {
     list-style: none;
@@ -190,16 +194,34 @@ header>button>svg {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 0;
 }
-#screens>ul>li {
+.title{
+    background-image: linear-gradient(to right, #960101c5, #a72d0ee8);
+    margin: 0px;
+    width: fit-content;
+    height: fit-content;
+}
+.title>h1{
+    padding: 10px;
+    background-image: linear-gradient(to right, #960101c5, #a72d0ee8);
+    margin: 0px;
+    height: fit-content;
+}
+#screens>ul>li:first-child, 
+#screens>ul>li:nth-child(3){
     /* width: calc(35% - 10px);  */
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
-    background-color: rgba(196, 133, 133, 0.548);
-    background-image: linear-gradient(to right, #960101c5, #a72d0ee8);
+    background-image: linear-gradient(to right,#010b96c5 , #8f2308e8);
+}
+
+#screens>ul>li:nth-child(2),
+#screens>ul>li:last-child{
+    background-image: linear-gradient(to left, #010b96c5, #8f2308e8);
 }
 .screen{
     display: flex;
@@ -234,17 +256,16 @@ header>button>svg {
     padding-left: 10px;
     margin: 0px 40px;
     box-sizing: border-box;
-    
 }
 #screens li section.features h2 {
-    font-size: 1.2em;
+    font-size: 2em;
     margin-bottom: 10px;
 }  
 
 #screens li section.features p {
     /* background-color: #333; */
     font-size: 1.2em;
-
+    color: wheat;
     max-width: 100%;
     line-height: 25px;
 }
@@ -260,14 +281,19 @@ header>button>svg {
 .features>ul>li {
     display: flex;
     flex-flow: column ;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: auto;
-    padding: 5px;
+    padding: 5px 15px;
+    border-right:  2px black solid;
+
+}
+.features>ul>li:last-child {
+    border-right:  none;
 }
 .features>ul>li>span:first-child {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #2c0101c0;
+    color: #240000c0;
 }
 .features>ul>li>span:last-child {
     font-size: 1.3rem;
@@ -392,19 +418,24 @@ footer {
     text-decoration: none;
     z-index: 50;
     width: 100%;
-    padding: 0 10px;
     color: white;
     background-color: rgba(155, 9, 9, 0.842);
 }
 
 #back_to_header{
     width: fit-content;
-    height: fit-content;
+    height: min-content ;
     cursor: pointer;
     position: fixed;
-    bottom: 65px;
+    bottom: 68px;
     right: 0;
-    font-size: 3rem;
-    background-color: #ad10109c;
+    max-width: auto;
+    background-color: #ad1010e5;
+
+}
+#back_to_header>span{
+    padding: 0;
+    margin: 0;
+    font-size:2.5rem;
 
 }
